@@ -16,11 +16,11 @@ protocol Animal: AnyObject
     var hungry: Bool {get set}
     var alive: Bool {get}
     var age: UInt8 {get}
-    
+
     func eat()
     func move(x: Int8, y: Int8) -> String
     func sound() -> String
-    
+
 }
 
 /// Mammal prototype.
@@ -28,7 +28,7 @@ protocol Animal: AnyObject
 /// Some Mammal may have a name
 @objc protocol Mammal: AnyObject {
     var name: String {get set}
-    
+
     func jump() -> String
     @objc optional func giveName(_ name: String)
 }
@@ -38,12 +38,12 @@ enum Activity {}
 
 class Fish: Animal
 {
-    static internal var animalCount: UInt8 = 0
-    
+    static public private(set) var animalCount: UInt8 = 0
+
     var hungry: Bool
     var alive: Bool
     var age: UInt8
-    
+
     init()
     {
         Fish.animalCount += 1
@@ -51,23 +51,26 @@ class Fish: Animal
         self.age = 0
         self.hungry = true
     }
-    
+
     deinit {
         Fish.animalCount -= 1
         print("\(Fish.animalCount) fishes left")
     }
-    
+
     func sound() -> String
     {
         return "..."
     }
     
-    ///TODO - 3D move
-    func move(x: Int8, y: Int8) -> String
-    {
+    func move(x: Int8, y: Int8) -> String {
         return "Moved to : \(x):\(y)"
     }
-    
+
+    func move3D(x: Int8, y: Int8, z: Int8) -> String
+    {
+        return "Moved to : \(x):\(y):\(z)"
+    }
+
     func eat()
     {
         if (hungry)
@@ -80,21 +83,21 @@ class Fish: Animal
             print("I'm not hungry")
         }
     }
-    
+
 }
 
 class Dog: Animal, Mammal
 {
-    static internal var animalCount: UInt8 = 0
-    
+    static public private(set) var animalCount: UInt8 = 0
+
     var age: UInt8 = 0
-    
+
     var alive: Bool
-    
+
     var hungry: Bool
-    
+
     var name: String
-    
+
     init()
     {
         Dog.animalCount += 1
@@ -103,17 +106,17 @@ class Dog: Animal, Mammal
         hungry = true
         name = ""
     }
-    
+
     deinit {
         Dog.animalCount -= 1
         print("\(Dog.animalCount) dogs left")
     }
-    
+
     @objc func giveName(_ name: String)
     {
         self.name = name
     }
-    
+
     func sound() -> String {
         return "Woof"
     }
@@ -138,18 +141,19 @@ class Dog: Animal, Mammal
     func jump() -> String {
         return "Dog jumped"
     }
-    
+
 }
 
 print("There are \(Fish.animalCount) fishes")
 var fish: Fish? = Fish()
 print("There are \(Fish.animalCount) fishes")
 fish = nil
-//How to disable this???
+//setter is inaccessible
 //Fish.animalCount = 5
 fish = Fish()
 print("There are \(Fish.animalCount) fishes")
 print("There are \(Dog.animalCount) dogs")
+
 var dogDog: Dog? = Dog()
 var dogMammal: Mammal? = Dog()
 var dogAnimal: Animal? = Dog()
