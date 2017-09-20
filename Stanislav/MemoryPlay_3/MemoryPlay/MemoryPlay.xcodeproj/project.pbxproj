@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B95104A21F5D566E001CBED9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95104A11F5D566E001CBED9 /* main.swift */; };
-		B9F947B81F6FCBC7005F1D2A /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947B71F6FCBC7005F1D2A /* Animal.swift */; };
-		B9F947BA1F6FCBF8005F1D2A /* Mammal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947B91F6FCBF8005F1D2A /* Mammal.swift */; };
-		B9F947BD1F6FCC51005F1D2A /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947BC1F6FCC51005F1D2A /* Fish.swift */; };
-		B9F947BF1F6FCC80005F1D2A /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947BE1F6FCC80005F1D2A /* Dog.swift */; };
+		B9D40A6C1F7261CA00C3541A /* MasterWeak.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40A6B1F7261CA00C3541A /* MasterWeak.swift */; };
+		B9D40A6E1F72627500C3541A /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40A6D1F72627500C3541A /* Human.swift */; };
+		B9D40A701F7264F000C3541A /* MasterUnowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D40A6F1F7264F000C3541A /* MasterUnowned.swift */; };
+		B9F947CD1F6FCD15005F1D2A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947CC1F6FCD15005F1D2A /* main.swift */; };
+		B9F947D51F6FCD56005F1D2A /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947D41F6FCD56005F1D2A /* Master.swift */; };
+		B9F947D81F6FCDB1005F1D2A /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947D71F6FCDB1005F1D2A /* Pet.swift */; };
+		B9F947DA1F6FD0F4005F1D2A /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F947D91F6FD0F4005F1D2A /* Dog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B951049C1F5D566E001CBED9 /* CopyFiles */ = {
+		B9F947C71F6FCD15005F1D2A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,16 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B951049E1F5D566E001CBED9 /* OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP; sourceTree = BUILT_PRODUCTS_DIR; };
-		B95104A11F5D566E001CBED9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B9F947B71F6FCBC7005F1D2A /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animal.swift; path = Protocols/Animal.swift; sourceTree = "<group>"; };
-		B9F947B91F6FCBF8005F1D2A /* Mammal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mammal.swift; path = Protocols/Mammal.swift; sourceTree = "<group>"; };
-		B9F947BC1F6FCC51005F1D2A /* Fish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fish.swift; path = Classes/Fish.swift; sourceTree = "<group>"; };
-		B9F947BE1F6FCC80005F1D2A /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = Classes/Dog.swift; sourceTree = "<group>"; };
+		B9D40A6B1F7261CA00C3541A /* MasterWeak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterWeak.swift; path = Classes/MasterWeak.swift; sourceTree = "<group>"; };
+		B9D40A6D1F72627500C3541A /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Human.swift; path = Protocols/Human.swift; sourceTree = "<group>"; };
+		B9D40A6F1F7264F000C3541A /* MasterUnowned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterUnowned.swift; path = Classes/MasterUnowned.swift; sourceTree = "<group>"; };
+		B9F947C91F6FCD15005F1D2A /* MemoryPlay */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MemoryPlay; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F947CC1F6FCD15005F1D2A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B9F947D41F6FCD56005F1D2A /* Master.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Master.swift; path = Classes/Master.swift; sourceTree = "<group>"; };
+		B9F947D71F6FCDB1005F1D2A /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pet.swift; path = Protocols/Pet.swift; sourceTree = "<group>"; };
+		B9F947D91F6FD0F4005F1D2A /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = Classes/Dog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B951049B1F5D566E001CBED9 /* Frameworks */ = {
+		B9F947C61F6FCD15005F1D2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,120 +50,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B95104951F5D566E001CBED9 = {
+		B9F947C01F6FCD15005F1D2A = {
 			isa = PBXGroup;
 			children = (
-				B95104A01F5D566E001CBED9 /* OOP */,
-				B951049F1F5D566E001CBED9 /* Products */,
+				B9F947CB1F6FCD15005F1D2A /* MemoryPlay */,
+				B9F947CA1F6FCD15005F1D2A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B951049F1F5D566E001CBED9 /* Products */ = {
+		B9F947CA1F6FCD15005F1D2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B951049E1F5D566E001CBED9 /* OOP */,
+				B9F947C91F6FCD15005F1D2A /* MemoryPlay */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B95104A01F5D566E001CBED9 /* OOP */ = {
+		B9F947CB1F6FCD15005F1D2A /* MemoryPlay */ = {
 			isa = PBXGroup;
 			children = (
-				B9F947BB1F6FCC18005F1D2A /* Classes */,
-				B9F947B61F6FCB7F005F1D2A /* Protocols */,
-				B95104A11F5D566E001CBED9 /* main.swift */,
+				B9F947D61F6FCD85005F1D2A /* Protocols */,
+				B9F947D31F6FCD2A005F1D2A /* Classes */,
+				B9F947CC1F6FCD15005F1D2A /* main.swift */,
 			);
-			path = OOP;
+			path = MemoryPlay;
 			sourceTree = "<group>";
 		};
-		B9F947B61F6FCB7F005F1D2A /* Protocols */ = {
+		B9F947D31F6FCD2A005F1D2A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B9F947B71F6FCBC7005F1D2A /* Animal.swift */,
-				B9F947B91F6FCBF8005F1D2A /* Mammal.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
-		B9F947BB1F6FCC18005F1D2A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B9F947BC1F6FCC51005F1D2A /* Fish.swift */,
-				B9F947BE1F6FCC80005F1D2A /* Dog.swift */,
+				B9F947D41F6FCD56005F1D2A /* Master.swift */,
+				B9F947D91F6FD0F4005F1D2A /* Dog.swift */,
+				B9D40A6B1F7261CA00C3541A /* MasterWeak.swift */,
+				B9D40A6F1F7264F000C3541A /* MasterUnowned.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		B9F947D61F6FCD85005F1D2A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B9F947D71F6FCDB1005F1D2A /* Pet.swift */,
+				B9D40A6D1F72627500C3541A /* Human.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B951049D1F5D566E001CBED9 /* OOP */ = {
+		B9F947C81F6FCD15005F1D2A /* MemoryPlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B95104A51F5D566E001CBED9 /* Build configuration list for PBXNativeTarget "OOP" */;
+			buildConfigurationList = B9F947D01F6FCD15005F1D2A /* Build configuration list for PBXNativeTarget "MemoryPlay" */;
 			buildPhases = (
-				B951049A1F5D566E001CBED9 /* Sources */,
-				B951049B1F5D566E001CBED9 /* Frameworks */,
-				B951049C1F5D566E001CBED9 /* CopyFiles */,
+				B9F947C51F6FCD15005F1D2A /* Sources */,
+				B9F947C61F6FCD15005F1D2A /* Frameworks */,
+				B9F947C71F6FCD15005F1D2A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OOP;
-			productName = OOP;
-			productReference = B951049E1F5D566E001CBED9 /* OOP */;
+			name = MemoryPlay;
+			productName = MemoryPlay;
+			productReference = B9F947C91F6FCD15005F1D2A /* MemoryPlay */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B95104961F5D566E001CBED9 /* Project object */ = {
+		B9F947C11F6FCD15005F1D2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Stanislav Khvalinskyi";
 				TargetAttributes = {
-					B951049D1F5D566E001CBED9 = {
+					B9F947C81F6FCD15005F1D2A = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B95104991F5D566E001CBED9 /* Build configuration list for PBXProject "OOP" */;
+			buildConfigurationList = B9F947C41F6FCD15005F1D2A /* Build configuration list for PBXProject "MemoryPlay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = B95104951F5D566E001CBED9;
-			productRefGroup = B951049F1F5D566E001CBED9 /* Products */;
+			mainGroup = B9F947C01F6FCD15005F1D2A;
+			productRefGroup = B9F947CA1F6FCD15005F1D2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B951049D1F5D566E001CBED9 /* OOP */,
+				B9F947C81F6FCD15005F1D2A /* MemoryPlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B951049A1F5D566E001CBED9 /* Sources */ = {
+		B9F947C51F6FCD15005F1D2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9F947BA1F6FCBF8005F1D2A /* Mammal.swift in Sources */,
-				B95104A21F5D566E001CBED9 /* main.swift in Sources */,
-				B9F947B81F6FCBC7005F1D2A /* Animal.swift in Sources */,
-				B9F947BF1F6FCC80005F1D2A /* Dog.swift in Sources */,
-				B9F947BD1F6FCC51005F1D2A /* Fish.swift in Sources */,
+				B9F947D81F6FCDB1005F1D2A /* Pet.swift in Sources */,
+				B9D40A6E1F72627500C3541A /* Human.swift in Sources */,
+				B9D40A701F7264F000C3541A /* MasterUnowned.swift in Sources */,
+				B9F947CD1F6FCD15005F1D2A /* main.swift in Sources */,
+				B9F947DA1F6FD0F4005F1D2A /* Dog.swift in Sources */,
+				B9F947D51F6FCD56005F1D2A /* Master.swift in Sources */,
+				B9D40A6C1F7261CA00C3541A /* MasterWeak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B95104A31F5D566E001CBED9 /* Debug */ = {
+		B9F947CE1F6FCD15005F1D2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		B95104A41F5D566E001CBED9 /* Release */ = {
+		B9F947CF1F6FCD15005F1D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +257,7 @@
 			};
 			name = Release;
 		};
-		B95104A61F5D566E001CBED9 /* Debug */ = {
+		B9F947D11F6FCD15005F1D2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -257,7 +265,7 @@
 			};
 			name = Debug;
 		};
-		B95104A71F5D566E001CBED9 /* Release */ = {
+		B9F947D21F6FCD15005F1D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,25 +276,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B95104991F5D566E001CBED9 /* Build configuration list for PBXProject "OOP" */ = {
+		B9F947C41F6FCD15005F1D2A /* Build configuration list for PBXProject "MemoryPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B95104A31F5D566E001CBED9 /* Debug */,
-				B95104A41F5D566E001CBED9 /* Release */,
+				B9F947CE1F6FCD15005F1D2A /* Debug */,
+				B9F947CF1F6FCD15005F1D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B95104A51F5D566E001CBED9 /* Build configuration list for PBXNativeTarget "OOP" */ = {
+		B9F947D01F6FCD15005F1D2A /* Build configuration list for PBXNativeTarget "MemoryPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B95104A61F5D566E001CBED9 /* Debug */,
-				B95104A71F5D566E001CBED9 /* Release */,
+				B9F947D11F6FCD15005F1D2A /* Debug */,
+				B9F947D21F6FCD15005F1D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B95104961F5D566E001CBED9 /* Project object */;
+	rootObject = B9F947C11F6FCD15005F1D2A /* Project object */;
 }
