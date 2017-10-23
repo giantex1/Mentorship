@@ -10,23 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    @IBOutlet weak var aIndex: NSTextField!
-    @IBOutlet weak var bIndex: NSTextField!
-    @IBOutlet weak var cIndex: NSTextField!
-    @IBOutlet weak var result: NSTextField!
+    @IBOutlet weak var aTextField: NSTextField!
+    @IBOutlet weak var bTextField: NSTextField!
+    @IBOutlet weak var cTextField: NSTextField!
+    @IBOutlet weak var resultLabel: NSTextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-    private func findRoots(a: Double, b: Double, c: Double) -> Array<Double>{
+    fileprivate func findRoots(a: Double, b: Double, c: Double) -> Array<Double>{
         let D = b * b - 4 * a * c
         if D < 0 {
             return []
@@ -40,31 +29,41 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func calulate(_ sender: Any) {
+        let a: Double = aTextField.doubleValue
+        let b: Double = bTextField.doubleValue
+        let c: Double = cTextField.doubleValue
+        if a == 0 {
+            resultLabel.stringValue = "Result: invalid values"
+            print(aTextField.stringValue, bTextField.stringValue, cTextField.stringValue)
+            aTextField.stringValue = ""
+            bTextField.stringValue = ""
+            cTextField.stringValue = ""
+            return
+        }
+        let results = findRoots(a: a, b: b, c: c)
+        switch results.count{
+        case 0:
+            resultLabel.stringValue = "Result: No natural roots"
+        case 1:
+            resultLabel.stringValue = "Result: X1 = \(results[0])"
+        case 2:
+            resultLabel.stringValue = "Result: X1 = \(results[0]), \n X2 = \(results[1])"
+        default: print("0_o")
+        }
+    }
     
-    @IBAction func calculate(_ sender: Any) {
-        let aStr = aIndex?.stringValue ?? "0"
-        let bStr = bIndex?.stringValue ?? "0"
-        let cStr = cIndex?.stringValue ?? "0"
-        print(aIndex?.stringValue)
-        print(aStr)
-        let a = Double(aStr) ?? 0
-        print(a)
-        let b = Double(bStr) ?? 0
-        let c = Double(cStr) ?? 0
-        if a == 0{
-            result.stringValue = "First index cannot be a zero"
-        }else{
-            let roots: Array<Double> = findRoots(a: a, b: b, c: c)
-            switch roots.count {
-            case 0:
-                result.stringValue = "This equation has no natural roots"
-            case 1:
-                result.stringValue = "x = \(roots[0])"
-            case 2:
-                result.stringValue = "x1 = \(roots[0]), x2 = \(roots[1])"
-            default:
-                result.stringValue = "Something strange"
-            }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        aTextField.integerValue = 1
+        bTextField.integerValue = 0
+        cTextField.integerValue = 0
+    }
+
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
         }
     }
 
